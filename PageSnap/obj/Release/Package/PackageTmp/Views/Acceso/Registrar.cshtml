@@ -1,0 +1,125 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Iniciar sesión | Disney+</title>
+    <!--Made with love by Mutiullah Samim -->
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+    <!--Custom styles-->
+    <link href="~/Content/Css/Registro.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/2657/PNG/256/disney_plus_icon_161064.png" />
+</head>
+<!--Coded with love by Mutiullah Samim-->
+<body>
+    <body>
+
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+                <div class="card">
+                    <div class="card-header">
+
+                        <h3>Account Verification</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <form action="@Url.Action("Registrar","Acceso")" method="post">
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="email" name="Correo" class="form-control input_user" value="" placeholder="Email">
+                            </div>
+
+
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" name="Clave" class="form-control input_pass" value="" placeholder="password">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" name="ConfirmarClave" class="form-control input_user" value="" placeholder="Confirm Password">
+                            </div>
+
+                            <div class="card-header">
+
+                                <h3>Card Confirmation</h3>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" name="NombreCompleto" class="form-control input_user" value="" placeholder="NAME ON CARD">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="text" name="Tarjeta" class="form-control input_user" value="" placeholder="CARD NUMBER">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                </div>
+                                <input type="month" name="FechaVencimiento" class="form-control input_user" value="" placeholder="EXPIRATION DATE">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                </div>
+                                <input type="password" name="CVV" class="form-control input_user" value="" placeholder="SECURITY CODE">
+                            </div>
+
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">Remember Me
+                            </div>
+                            @if (ViewData["Mensaje"] != null)
+                            {
+                                <div class="alert alert-danger" role="alert">
+                                    @ViewData["Mensaje"]
+                                </div>
+                            }
+                            <div class="d-flex justify-content-center mt-3 login_container">
+                                <button type="submit" name="button" class="btn login_btn">SEND INFORMATION</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        If the information is correct, confirmation email within 24H
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            Do you have an account? <a href="@Url.Action("Login","Acceso")" class="ml-2">Login</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </body>
+</html>

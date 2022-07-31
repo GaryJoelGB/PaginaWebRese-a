@@ -1,0 +1,11 @@
+﻿@media screen and (max-with:800px){
+    .menu-navegacion{
+        flex-direction: column;
+        height:100px;
+        width:80px;
+        justify-content:space-evenly;
+    }
+    
+
+
+}

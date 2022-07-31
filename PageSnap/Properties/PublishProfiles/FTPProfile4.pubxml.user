@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAxDhbvx2hJECjoS93NV9xgwAAAAACAAAAAAAQZgAAAAEAACAAAABUZHTWv2kiGSyFJ9qtvz2rjHc5XhDKYJFt3o3O/dt28QAAAAAOgAAAAAIAACAAAAD1rqvrhsZmFlR13gc9A0mORZDfUjZxa1/Kn2NpbdjKVSAAAADicEkH7lSaKmSpR585vne+wr3hCqfJ5DoXVgZLKJIP70AAAADu+ouIcSGuyIrPgEmIPzrfHwSlo+jgnMUC5wRxqUiBNZWhq+hQmYz35N7ZCwRu02EFnVFNFewQVPjUVRPccJni</EncryptedPassword>
+    <_PublishTargetUrl>ftp://198.37.116.30/www.PageForMeeting.somee.com</_PublishTargetUrl>
+    <History>False|2022-07-18T14:16:53.8116180Z;False|2022-07-18T22:16:29.2227670+08:00;</History>
+  </PropertyGroup>
+</Project>
